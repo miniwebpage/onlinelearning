@@ -1,0 +1,84 @@
+/*------------cards----------*/
+.form-block {
+	padding: 82px 0px 140px 0px;
+}
+.form-block .pTCcq a {
+	width: 0px!important;
+	overflow: hidden!important;
+}
+
+.form-block .card-title {
+	text-align: center;
+	color: #000000;
+}
+
+.form-block .subtxt {
+	text-align: center;
+	margin: 17px 0px 76px 0px;
+	color: #000000;
+}
+
+.form-con .Content__Font-sc-3sh3bs-0 {
+	height: 463px;
+	overflow: hidden;
+}
+
+.gtocnm {
+	display: none!important;
+}
+
+.form-con label {
+	font-family: 'montserrat', sans-serif!important;
+	font-weight: 500!important;
+	color: #000000!important;
+}
+
+.TextControlBase__TextControlBaseContainer-qtroj4-0.kgaCAZ.FieldContainer__FieldLayout-sc-gwguj-0.eYWVUE{
+	font-family: 'montserrat', sans-serif!important;
+	border-radius: 15px!important;
+}
+
+.form-con button {
+	font-family: 'montserrat', sans-serif!important;
+	width: 100%;
+	text-align: center;
+}
+
+.SubmitMessage__Container-sc-1hpdxug-0.fnkeXk {
+	padding: 17px 41px 17px 41px;
+    border-radius: 10px;
+    font-family: 'montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    background: #05668D;
+    border: 1px solid transparent;
+    color: #ffffff;
+    transition: all 0.23s ease-in-out 0s;
+    -webkit-transition: all 0.23s ease-in-out 0s;
+}
+
+button.ButtonBase__ButtonContainer-sc-p43e7i-3.ktBlIG {
+	background: transparent!important;
+}
+
+@media screen and (max-width: 1201px){
+
+}
+
+@media screen and (max-width: 1101px){
+
+}
+
+@media screen and (max-width: 1025px){
+
+}
+
+@media screen and (max-width: 901px){
+
+}
+
+@media screen and (max-width: 601px){
+
+}
+
