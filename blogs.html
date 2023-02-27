@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#05668D" />
+	<meta content="Blogs | Online Learning" property="twitter:title"/>
+	<meta content="Blogs | Online Learning" property="og:title"/>
+	<meta content="Blogs | Online Learning" name="title"/>
+	<meta content="https://raw.githubusercontent.com/miniwebpage/onlinelearning/main/images/sharing-banner.png" property="twitter:image"/>
+	<meta content="https://raw.githubusercontent.com/miniwebpage/onlinelearning/main/images/sharing-banner.png" property="og:image"/>
+	<link rel='shortcut icon' type='image/x-icon' href='images/icons/favicon.svg' />
+	<link rel="stylesheet" href="css/general.css">
+	<link rel="stylesheet" href="css/blogs.css">
+	<script src="https://unpkg.com/scrollreveal@4"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	</style>
+	<title>Blogs | Online Learning</title>
+</head>
+<body>
+	<main id="blogs" class="page main">
+
+		<div include-nav="partial/navigation.html"></div>
+
+		<section class="header-block">
+			<div class="custom-con">
+				<h1 class="header-title">Blogs</h1>
+				<div class="header-txt">
+					<p class="body-text-sm-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae .</p>
+				</div>
+			</div>
+		</section>		
+
+		<section class="main-block">
+			<div class="custom-con">
+				<div class="tab-links">
+					<div class="tab-link active">
+						<span class="tab-link-all">ALL</span>
+						<div class="active-line"></div>
+					</div>
+					<div class="tab-link">
+						<span class="tab-link-annoucement">Annoucement</span>
+						<div class="active-line"></div>
+					</div>
+					<div class="tab-link">
+						<span class="tab-link-news">News</span>
+						<div class="active-line"></div>
+					</div>
+					<div class="tab-link">
+						<span class="tab-link-events">Events</span>
+						<div class="active-line"></div>
+					</div>
+				</div>
+
+				<div class="grid">
+					<a href="15-unheard-ways-to-achieve-greater-school-meetings.html" class="blog-card card-all card-annoucement">
+						<img src="images/annoucement-img1.jpg" class="blog-thumb">
+						<div class="blog-dets">
+							<p class="body-text-sm-light">15 Unheard Ways To Achieve Greater School Meetings</p>
+							<div class="category ">
+								<p class="body-text-xs-light">Annoucement | Jan 28, 2023</p>
+							</div>
+							<div class="btn">
+								<p class="body-text-xs-light">Learn more</p>
+								<img src="images/icons/black-arrow-next.svg">
+							</div>
+						</div>
+					</a>
+					<a href="boost-your-school-news-with-these-tips.html" class="blog-card card-all card-news">
+						<img src="images/news-img.jpg" class="blog-thumb">
+						<div class="blog-dets">
+							<p class="body-text-sm-light">Boost Your School News With These Tips</p>
+							<div class="category">
+								<p class="body-text-xs-light">News | Dec 28, 2022</p>
+							</div>
+							<div class="btn">
+								<p class="body-text-xs-light">Learn more</p>
+								<img src="images/icons/black-arrow-next.svg">
+							</div>
+						</div>
+					</a>
+					<a href="its-all-about-the-school-event.html" class="blog-card card-all card-events">
+						<img src="images/events-img.jpg" class="blog-thumb">
+						<div class="blog-dets">
+							<p class="body-text-sm-light">It's All About (The) School Event</p>
+							<div class="category">
+								<p class="body-text-xs-light">Events | Feb 1, 2023</p>
+							</div>
+							<div class="btn">
+								<p class="body-text-xs-light">Learn more</p>
+								<img src="images/icons/black-arrow-next.svg">
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<!-- <div id="pagination-container" onclick="topFunction()"></div> -->
+				<div id="pagination-container"></div>
+			</div>
+		</section>
+
+		<div include-footer="partial/footer.html"></div>
+
+	</main>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplePagination.js/1.4/jquery.simplePagination.min.js" integrity="sha512-J4OD+6Nca5l8HwpKlxiZZ5iF79e9sgRGSf0GxLsL1W55HHdg48AEiKCXqvQCNtA1NOMOVrw15DXnVuPpBm2mPg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/include-nav.js"></script>
+<script src="js/include-footer.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/filter-blogs.js"></script>
+<script>
+var items = $(".blog-card");
+    var numItems = items.length;
+    var perPage = 15;
+
+    items.slice(perPage).hide();
+
+    $('#pagination-container').pagination({
+        items: numItems,
+        itemsOnPage: perPage,
+        prevText: "&lt;",
+        nextText: "&gt;",
+        onPageClick: function (pageNumber) {
+            var showFrom = perPage * (pageNumber - 1);
+            var showTo = showFrom + perPage;
+            items.hide().slice(showFrom, showTo).show();
+        }
+    });
+
+    // function topFunction() {
+    //   $(".header-txt").get(0).scrollIntoView({behavior: 'smooth'});
+    // }
+
+</script>
+</html>
