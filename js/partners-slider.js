@@ -9,8 +9,8 @@ $(function() {
     navContainer:'.owl-nav',
     lazyLoad: true,
     navText: [
-        "<img src='images/icons/linear-arrow-prev.svg'>",
-        "<img src='images/icons/linear-arrow-next.svg''>"
+        "<img src='images/icons/linear-arrow-prev.svg' loading='eager' alt='linear-arrow-prev' title='linear-arrow-prev' width='33' height='20'>",
+        "<img src='images/icons/linear-arrow-next.svg' loading='eager' alt='linear-arrow-next' title='linear-arrow-next' width='33' height='20'>"
         ],
     rtl: false,
     loop:true,
