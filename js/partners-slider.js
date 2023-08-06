@@ -1,6 +1,7 @@
-$(function() {
+
+function testiSlider() {
   // Owl Carousel
-  var owl = $(".testi-slider");
+  var owl = $(".testi-slider .owl-carousel");
   owl.owlCarousel({
     items: 1,
     margin: 61,
@@ -34,28 +35,27 @@ $(function() {
         },
         700:{
           nav:false,
-          // margin: 50,
+          margin: 30,
         },
         900:{
           nav:false,
-          // margin: 50,
+          margin: 30,
         },
         1000:{
           // margin: 40
         }
     }
   });
-});
+}
 
-
-$(function() {
+function logoSlider() {
   // Owl Carousel
   var owl = $(".logo-slider .owl-carousel");
   owl.owlCarousel({
     lazyLoad: true,
     loop: true,
     items: 7,
-    margin: 34,
+    margin: 15,
     autoplay: true,
     slideTransition: 'linear',
     autoplayTimeout: 9500,
@@ -67,21 +67,17 @@ $(function() {
     responsive:{
         0:{
           items: 3,
-          margin: 24,
         },
         600:{
           items: 4,
-          margin: 24,
         },
         700:{
-          margin: 24,
-          items: 5,
+          items: 4,
         },
         900:{
-          margin: 15,
+          items: 5,
         },
         1000:{
-          // margin: 40
         }
     }
     });
@@ -94,4 +90,4 @@ $(function() {
     }
 
     setTimeout(setSpeed, 9500);
-});
+}

@@ -1,0 +1,227 @@
+body, h1, h2, h3, p, small, span, a, button{
+	font-family: 'Montserrat', sans-serif!important;
+}
+
+body{
+	margin: 0px!important;
+	scroll-behavior: smooth;
+}
+
+main, section {
+	position: relative;
+	overflow: hidden;
+}
+
+a, button {
+	text-decoration: none!important;
+	transition: .3s ease-in;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nopad {
+	padding: 0px!important;
+}
+
+/* label, label span, .nav-link, .footer-link, .footnote-txt,
+.ghost-btn-white, .ghost-btn-blue, .btn-blue  {
+	font-size: 0.8rem;
+} */
+
+label span, .footnote-txt{
+	font-size: 0.8rem;
+}
+
+label span {
+	color: #FF0000;
+}
+
+.nav-link, .footer-link {
+    transition: all 0.50s ease-in-out 0s;
+    -webkit-transition: all 0.50s ease-in-out 0s;
+    background: -webkit-linear-gradient(#000000, #000000);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    color: transparent!important;
+}
+
+.nav-link:hover, .footer-link:hover {
+	background: -webkit-linear-gradient(#05668D, #02C39A);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.nav-link, .footnote-txt {
+	font-weight: 500;
+    padding: 0px!important;
+}
+
+.footer-link {
+	font-weight: 400;
+}
+
+
+.ghost-btn-white,
+.ghost-btn-blue,
+.btn-blue {
+	font-weight: 500;
+    padding: 15px 20px 15px 20px;
+	border-radius: 10px;
+    transition: all 0.23s ease-in-out 0s;
+    -webkit-transition: all 0.23s ease-in-out 0s;
+	outline: none;
+	cursor: pointer;
+}
+
+.ghost-btn-white,
+.ghost-btn-blue {
+	background-color: transparent;
+}
+
+.ghost-btn-white {
+	color: #ffffff;
+	border: 1px solid #ffffff;
+}
+
+.ghost-btn-white:hover {
+	color: #000000;
+	border: 1px solid #ffffff;
+	background: #ffffff;
+}
+
+.ghost-btn-blue {
+	color: #05668D;
+	border: 1px solid #05668D;
+}
+
+.ghost-btn-blue:hover {
+	color: #ffffff;
+	background: #05668D;
+	border: 1px solid #05668D;
+}
+
+.btn-blue {
+	background: #05668D;
+	border: 1px solid transparent;
+	color: #ffffff;
+}
+
+#contact .btn-blue.contact,
+.btn-blue:hover {
+	background: #1e7699;
+	border: 1px solid #1e7699;
+	color: #ffffff;
+}
+
+#aboutus .nav-link.about,
+#k12 .nav-link.products,
+#uni .nav-link.products,
+#admissions .nav-link.admissions,
+#blogs .nav-link.blogs,
+#homepage .footer-link.home,
+#aboutus .footer-link.about,
+#k12 .footer-link.k12,
+#uni .footer-link.uni,
+#admissions .footer-link.admissions,
+#blogs .footer-link.blogs,
+#contact .footer-link.contact {
+	background: -webkit-linear-gradient(#05668D, #02C39A);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#k12 .mob-dropdown-content .dropdown-link.k12,
+#uni .mob-dropdown-content .dropdown-link.uni,
+#admissions .mob-dropdown-content .dropdown-link.admissions {
+    background: -webkit-linear-gradient(#05668d, #05668d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.float-ico {
+	animation: float 2s ease-in-out infinite;
+    position: relative;
+    top: 15px;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+	transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+.arrow-con{
+    width:24px;
+    height: 24px;
+    max-width: 24px;
+    background-position: center!important;
+  	background-size: contain!important;
+	background-repeat: no-repeat!important;
+	transition: all .3s ease-in-out 0s;
+	-webkit-transition: all .3s ease-in-out 0s;
+}
+
+.desc-width {
+	width: 70%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.go-back-con {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.go-back-con .goback-page{
+	background: url('../images/icons/linear-arrow-prev.svg');
+	position: relative;
+	margin-right: 1rem;
+	transform: scale(0.8) translate(0px, 0px);
+}
+
+.go-back-con small{
+	color: #000000!important;
+}
+
+.go-back-con:hover .goback-page{
+	transform: scale(0.8) translate(-10px, 0px);
+}
+
+.go-back-con:hover small{
+	color: #000000!important;
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){
+	.desc-width {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px){}
+
+@media screen and (max-width: 400px){}
+
+/* ---------page----------- */
+
+#aboutus .header-block,
+#blogs .header-block,
+#contact .header-block {
+    padding: 173px 0px 80px 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(93.18deg, #05668D 0%, #028090 33.85%, #00A896 65.1%, #02C39A 100%);
+    color: #ffffff;
+    text-align: center;
+}

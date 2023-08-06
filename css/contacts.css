@@ -1,25 +1,27 @@
-/*------------cards----------*/
-.form-block {
-	padding: 82px 0px 140px 0px;
+/*------------form block----------*/
+#contact .form-block {
+	padding: 5rem 0px 5rem 0px;
 }
+
+#contact .form-block h2, #contact .form-block p{
+	text-align: center;
+	color: #000000;
+}
+
+#contact .form-con {
+	margin-top: 3rem;
+}
+
+#contact .form-con label {
+	font-weight: 500!important;
+}
+
 .form-block .pTCcq a {
 	width: 0px!important;
 	overflow: hidden!important;
 }
 
-.form-block .card-title {
-	text-align: center;
-	color: #000000;
-}
-
-.form-block .subtxt {
-	text-align: center;
-	margin: 17px 0px 76px 0px;
-	color: #000000;
-}
-
 .form-con .Content__Font-sc-3sh3bs-0 {
-	height: 463px;
 	overflow: hidden;
 }
 
@@ -27,19 +29,12 @@
 	display: none!important;
 }
 
-.form-con label {
-	font-family: 'montserrat', sans-serif!important;
-	font-weight: 500!important;
-	color: #000000!important;
-}
 
 .TextControlBase__TextControlBaseContainer-qtroj4-0.kgaCAZ.FieldContainer__FieldLayout-sc-gwguj-0.eYWVUE{
-	font-family: 'montserrat', sans-serif!important;
 	border-radius: 15px!important;
 }
 
 .form-con button {
-	font-family: 'montserrat', sans-serif!important;
 	width: 100%;
 	text-align: center;
 }
@@ -62,6 +57,11 @@ button.ButtonBase__ButtonContainer-sc-p43e7i-3.ktBlIG {
 	background: transparent!important;
 }
 
+.Content__Font-sc-3sh3bs-0 a{
+	filter: blur(117px);
+}
+
+
 @media screen and (max-width: 1201px){
 
 }
@@ -81,4 +81,3 @@ button.ButtonBase__ButtonContainer-sc-p43e7i-3.ktBlIG {
 @media screen and (max-width: 601px){
 
 }
-

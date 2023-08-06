@@ -24,6 +24,6 @@ function includeNAV() {
         return;
       }
     }
-  };
+};
 
-  includeNAV();
+includeNAV();

@@ -1,31 +1,32 @@
+/* -------testi slider----------- */
 .partners-block {
 	padding: 100px 0px 129px 0px;
 	background-color: #ffffff;
+    color: #000000;
+    text-align: center;
 }
 
-.partners-block .block-title {
-	text-align: center;
-	color: #000000;
+.partners-block small{
+	font-weight: 500;
 }
 
-.partners-block .partners-slider {
+.partners-block .testi-slider {
 	width: 60%;
 	margin: 85px auto auto auto;
 	position: relative;
 }
 
-.partners-block .owl-item {
+.partners-block .testi-slider .owl-item {
 	opacity: 0.5;
 	transition: all 0.50s ease-in-out 0s;
     -webkit-transition: all 0.50s ease-in-out 0s;
 }
 
-.partners-block .owl-item.center {
+.partners-block .testi-slider .owl-item.center {
 	opacity: 1;
 }
 
-
-.partners-block .partners-slider .slider-card {
+.partners-block .testi-slider .slider-card {
 	/*width: 100%;*/
 	position: relative;
 	background: #FFFFFF;
@@ -40,47 +41,31 @@
     text-align: center;
 }
 
-.partners-block .partners-slider .slider-card .qoute-ico {
-	height: 46px;
-	width: auto;
-	object-fit: contain;
+.partners-block .testi-slider .slider-card .qoute-ico{
+    width:65px;
+    height: 46px;
+    max-width: 65px;
+    background-position: center!important;
+  	background-size: contain!important;
+	transition: all .3s ease-in-out 0s;
+	-webkit-transition: all .3s ease-in-out 0s;
+    background: url('../images/icons/qoute.svg');
 	position: absolute;
     top: -23px;
     left: 44px;
     opacity: 0;
-    transition: all 0.50s ease-in-out 0s;
-    -webkit-transition: all 0.50s ease-in-out 0s;
 }
 
-.partners-block .partners-slider .slider-card .partner-logo {
+.partners-block .testi-slider .slider-card .partner-logo {
 	height: 45px;
+    margin-bottom: 1rem;
 }
 
-.partners-block .partners-slider .slider-card .body-text-xs-light {
-	margin: 32px auto 32px auto!important;
-	width: 100%;
-}
-
-.partners-block .slider-card .testi-name .body-text-xs-light {
-	margin: 0px auto 0px auto!important;
-	font-weight: 400;
-}
-
-
-.partners-block .owl-carousel .owl-stage-outer {
-    overflow: visible;
-}
-
-.partners-block button {
-    border: none;
-    background: none;
-}
-
-.partners-block .owl-item.active .qoute-ico {
+.partners-block .testi-slider .owl-item.active .qoute-ico {
 	opacity: 1;
 }
 
-.partners-block .partners-slider .owl-controls {
+.partners-block .testi-slider .owl-controls {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -90,7 +75,7 @@
     pointer-events: none;
 }
 
-.partners-block .partners-slider .owl-controls .custom-nav{
+.partners-block .testi-slider .owl-controls .custom-nav{
     position: relative;
     height: 100%;
     width: 100%;
@@ -99,38 +84,34 @@
     align-items: center;
 }
 
-.partners-block .partners-slider .owl-controls button{
+.partners-block .testi-slider .owl-controls button{
     pointer-events: auto;
     position: relative;
     cursor: pointer;
-    top: -32px;
+    /* top: -32px; */
+    transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
 }
 
-.partners-block .partners-slider .owl-controls button.owl-prev{
-    left: -51px;
+.partners-block .testi-slider .owl-controls button.owl-prev{
+    transform: translate(-51px, -32px);
 }
 
-.partners-block .partners-slider .owl-controls button.owl-next{
-    right: -51px;
+.partners-block .testi-slider .owl-controls button.owl-next{
+    transform: translate(51px, -32px);
 }
 
-.partners-block .owl-dots {
-	margin-top: 55px;
+.partners-block .testi-slider .owl-controls button.owl-prev:hover{
+	transform: translate(-57px, -32px);
 }
 
-.partners-block .owl-theme .owl-dots .owl-dot span {
-    background: linear-gradient(180deg, #05668D 0%, #028090 52.6%, #00A896 81.77%, #02C39A 100%);
-    opacity: 0.5;
+.partners-block .testi-slider .owl-controls button.owl-next:hover{
+	transform: translate(57px, -32px);
 }
 
-.partners-block .owl-theme .owl-dots .owl-dot.active span, 
-.partners-block .owl-theme .owl-dots .owl-dot:hover span {
-    background: linear-gradient(180deg, #05668D 0%, #028090 52.6%, #00A896 81.77%, #02C39A 100%);
-    opacity: 1;
-}
-
+/* -------logo slider----------- */
 .partners-block .logo-slider {
-	margin-top: 114px;
+	margin-top: 5rem;
 }
 
 
@@ -149,40 +130,58 @@
 	object-fit: contain;
 }
 
+/* -------general owl-carousel----------- */
 
-@media screen and (max-width: 1200px){
-
+.partners-block .owl-carousel .owl-stage-outer {
+    overflow: visible;
 }
 
-@media screen and (max-width: 1100px){
-
+.partners-block button {
+    border: none!important;
+    background: none!important;
+    outline: none!important;
 }
 
-@media screen and (max-width: 900px){
-	.partners-block {
-	    padding: 70px 0px 109px 0px;
-	}
-
-	.partners-block .logo-slider {
-	    margin-top: 75px;
-	}
-
-	.partners-block .logo-slider .logo-card {
-	    padding: 25px;
-	}
-	.partners-block .logo-slider .logo-card img {
-	    width: 60px;
-	}
+.partners-block .owl-dots {
+	margin-top: 55px;
 }
 
-@media screen and (max-width: 600px){
-
-	.partners-block .partners-slider .owl-controls {
-	    display: none;
-	}
-
-	.partners-block .partners-slider {
-	    width: 80%;
-	    margin: 50px auto auto auto;
-	}
+.partners-block .owl-theme .owl-dots .owl-dot span {
+    background: linear-gradient(180deg, #05668D 0%, #028090 52.6%, #00A896 81.77%, #02C39A 100%);
+    opacity: 0.5;
 }
+
+.partners-block .owl-theme .owl-dots .owl-dot.active span, 
+.partners-block .owl-theme .owl-dots .owl-dot:hover span {
+    background: linear-gradient(180deg, #05668D 0%, #028090 52.6%, #00A896 81.77%, #02C39A 100%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){
+    .partners-block .testi-slider {
+        width: 90%;
+        margin: 60px auto auto auto;
+    }
+
+    .partners-block .testi-slider .owl-controls {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .partners-block {
+        padding: 80px 0px 80px 0px;
+    }
+    
+    .partners-block .logo-slider {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px){}

@@ -1,0 +1,226 @@
+/* -------------HEADER------------- */
+#homepage .header-block {
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+	linear-gradient(100.24deg, rgba(5, 102, 141, 0.5) 0%, rgba(2, 128, 144, 0.5) 28.65%, rgba(0, 168, 150, 0.5) 67.19%, rgba(2, 195, 154, 0.5) 100%), 
+	url('../images/header-img.jpg');
+	background-position: center;
+  	background-size: cover;
+  	color: #ffffff;
+  	text-align: center;
+    padding: 300px 0px 175px 0px;
+}
+
+#homepage .header-arrow-down{
+    background: url('../images/icons/white-arrow-down.svg');
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){}
+
+@media screen and (max-width: 768px){
+    #homepage .header-block {
+        padding: 200px 0px 105px 0px;
+    }
+}
+
+@media screen and (max-width: 400px){}
+
+/* -------------PRODUCT------------- */
+#homepage .product-block {
+	padding: 100px 0px 100px 0px;
+	background: #ffffff;
+}
+
+#homepage .product-block h2,
+#homepage .product-block p{
+	color: #000000;
+	text-align: center;
+}
+
+#homepage .white-arrow-next{
+    background: url('../images/icons/white-arrow-next.svg');
+	position: relative;
+}
+
+#homepage .product-block .grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+	margin-top: 3rem;
+}
+
+#homepage .product-card {
+	position: relative;
+	overflow: hidden;
+	border-radius: 10px;
+	height: 60vh;
+	width: 100%;
+}
+
+#homepage .product-card h3,
+#homepage .product-card p,
+#homepage .product-card span{
+	color: #ffffff;
+	text-align: left;
+	text-transform: capitalize;
+}
+
+#homepage .product-card .thumbnail{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: all .5s ease-in-out 0s;
+	-webkit-transition: all .5s ease-in-out 0s;
+	transform: scale(1);
+}
+
+#homepage .product-card .card-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+	linear-gradient(180deg, rgba(39, 114, 107, 0.21) 0%, rgba(2, 128, 144, 0.21) 29.69%, rgba(0, 168, 150, 0.21) 64.58%, rgba(5, 102, 141, 0.21) 100%);
+	display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+	padding: 2rem 1.5rem;
+}
+
+#homepage .product-card .learn-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#homepage .product-card .learn-more .white-arrow-next{
+	top: 2px;
+	transform: scale(0.8) translate(0px, 0px);
+}
+
+#homepage .product-card:hover .thumbnail{
+	transform: scale(1.1);
+}
+
+#homepage .product-card:hover .learn-more .white-arrow-next{
+	transform: scale(0.8) translate(10px, 0px);
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){
+	#homepage .product-block .grid {
+		grid-column-gap: 1rem;
+	}
+
+	#homepage .product-card {
+		height: 50vh;
+	}
+
+	#homepage .product-card .card-overlay {
+		padding: 1.6rem 1rem;
+	}
+}
+
+@media screen and (max-width: 768px){
+	#homepage .product-block {
+		padding: 80px 0px 80px 0px;
+	}
+
+	#homepage .product-block .grid {
+		grid-template-columns: 1fr;
+		grid-row-gap: 1rem;
+	}
+
+	#homepage .product-card {
+		height: 40vh;
+	}
+}
+
+@media screen and (max-width: 400px){}
+
+/* -------------ABOUT------------- */
+#homepage .about-block {
+	padding: 140px 0px 140px 0px;
+	position: relative;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+	url('../images/about-bg-img.jpg');
+	color: #ffffff;
+	background-position: left;
+  	background-size: cover;
+}
+
+#homepage .about-block::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(180deg, rgba(39, 114, 107, 0.21) 0%, rgba(2, 128, 144, 0.21) 29.69%, rgba(0, 168, 150, 0.21) 64.58%, rgba(5, 102, 141, 0.21) 100%);
+}
+
+#homepage .about-block h2, #homepage .about-block p, #homepage .about-block a{
+	position: relative;
+	z-index: 2;
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){}
+
+@media screen and (max-width: 768px){
+	#homepage .about-block {
+		padding: 80px 0px 80px 0px;
+	}
+
+	#homepage .about-block {
+		background-position: 60%;
+	}
+}
+
+@media screen and (max-width: 400px){}
+
+
+/* -------------CTA------------- */
+#homepage .cta-block {
+	padding: 100px 0px 100px 0px;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
+	linear-gradient(100.24deg, rgba(5, 102, 141, 0.5) 0%, rgba(2, 128, 144, 0.5) 28.65%, rgba(0, 168, 150, 0.5) 67.19%, rgba(2, 195, 154, 0.5) 100%), 
+	url('../images/cta-bg-img.jpg');
+	background-position: center;
+  	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+}
+
+@media screen and (max-width: 1200px){}
+
+@media screen and (max-width: 1100px){}
+
+@media screen and (max-width: 1025px){}
+
+@media screen and (max-width: 994px){}
+
+@media screen and (max-width: 768px){
+	#homepage .cta-block {
+		padding: 80px 0px 80px 0px;
+	}
+}
+
+@media screen and (max-width: 400px){}
