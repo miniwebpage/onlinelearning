@@ -5,6 +5,7 @@
 	url('../images/header-img.jpg');
 	background-position: center;
   	background-size: cover;
+	background-repeat: no-repeat;
   	color: #ffffff;
   	text-align: center;
     padding: 300px 0px 175px 0px;
