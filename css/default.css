@@ -5,6 +5,7 @@ body, h1, h2, h3, p, small, span, a, button{
 body{
 	margin: 0px!important;
 	scroll-behavior: smooth;
+	position: relative;
 }
 
 main, section {
@@ -115,14 +116,14 @@ label span {
 }
 
 #aboutus .nav-link.about,
-#k12 .nav-link.products,
-#uni .nav-link.products,
+#primary .nav-link.products,
+#middle .nav-link.products,
 #admissions .nav-link.admissions,
 #blogs .nav-link.blogs,
 #homepage .footer-link.home,
 #aboutus .footer-link.about,
-#k12 .footer-link.k12,
-#uni .footer-link.uni,
+#primary .footer-link.primary,
+#middle .footer-link.middle,
 #admissions .footer-link.admissions,
 #blogs .footer-link.blogs,
 #contact .footer-link.contact {
@@ -131,8 +132,8 @@ label span {
 	-webkit-text-fill-color: transparent;
 }
 
-#k12 .mob-dropdown-content .dropdown-link.k12,
-#uni .mob-dropdown-content .dropdown-link.uni,
+#primary .mob-dropdown-content .dropdown-link.primary,
+#middle .mob-dropdown-content .dropdown-link.middle,
 #admissions .mob-dropdown-content .dropdown-link.admissions {
     background: -webkit-linear-gradient(#05668d, #05668d);
     -webkit-background-clip: text;
@@ -225,3 +226,4 @@ label span {
     color: #ffffff;
     text-align: center;
 }
+	

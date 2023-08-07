@@ -1,8 +1,8 @@
 
-function testiSlider() {
+function partnersSlider() {
   // Owl Carousel
-  var owl = $(".testi-slider .owl-carousel");
-  owl.owlCarousel({
+  var owlp = $(".testi-slider .owl-carousel");
+  owlp.owlCarousel({
     items: 1,
     margin: 61,
     loop: true,
@@ -46,12 +46,10 @@ function testiSlider() {
         }
     }
   });
-}
 
-function logoSlider() {
   // Owl Carousel
-  var owl = $(".logo-slider .owl-carousel");
-  owl.owlCarousel({
+  var owlt = $(".logo-slider .owl-carousel");
+  owlt.owlCarousel({
     lazyLoad: true,
     loop: true,
     items: 7,
