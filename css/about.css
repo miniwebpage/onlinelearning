@@ -35,6 +35,10 @@
 }
 
 /* -------------team------------------ */
+#aboutus .team-block {
+    background-color: #ffffff;
+}
+
 #aboutus .team-card h3,
 #aboutus .team-card small{
 	color: #ffffff;

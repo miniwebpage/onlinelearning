@@ -6,6 +6,7 @@ body{
 	margin: 0px!important;
 	scroll-behavior: smooth;
 	position: relative;
+	background-color: #028090;
 }
 
 main, section {

@@ -1,6 +1,7 @@
 /*------------form block----------*/
 #contact .form-block {
 	padding: 5rem 0px 5rem 0px;
+	background-color: #ffffff;
 }
 
 #contact .form-block h2, #contact .form-block p{

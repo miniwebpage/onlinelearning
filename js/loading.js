@@ -4,8 +4,10 @@ $(window).on('load', function(){
 });
 
 function removeLoader(){
-    $("main").attr('style', '');
+    setTimeout(function() {
+        $("main").attr('style', '');
+    }, 90)
     $( "#loadingElement" ).fadeOut(100, function() {
-    $( "#loadingElement" ).remove();
-});  
+        $( "#loadingElement" ).remove();
+    });  
 }
