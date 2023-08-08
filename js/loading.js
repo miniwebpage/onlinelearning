@@ -7,7 +7,7 @@ function removeLoader(){
     setTimeout(function() {
         $("main").attr('style', '');
     }, 90)
-    $( "#loadingElement" ).fadeOut(100, function() {
+    $( "#loadingElement div" ).fadeOut(100, function() {
         $( "#loadingElement" ).remove();
     });  
 }
