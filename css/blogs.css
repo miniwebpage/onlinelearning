@@ -86,9 +86,10 @@ main#blogs.insidepage {
 }
 
 #blogs .blog-card .blog-thumb{
-    height: 30vh;
+    height: 280px;
     width: 100%;
     object-fit: cover;
+    object-position: 25% 25%;
 }
 
 #blogs .blog-card .blog-dets {
@@ -147,6 +148,10 @@ main#blogs.insidepage {
 	#blogs .grid {
 		grid-template-columns: 1fr;
 	}
+
+    #blogs .blog-card .blog-thumb{
+        height: 180px;
+    }
 }
 
 /* ------------pagination----------- */
@@ -231,7 +236,7 @@ main#blogs.insidepage {
 }
 
 #blogs.insidepage .blog-img{
-	height: 60vh;
+	height: 480px;
     width: 100%;
     object-fit: cover;
     object-position: 50% 35%;
@@ -239,11 +244,18 @@ main#blogs.insidepage {
 	margin-bottom: 2rem;
 }
 
+
 #blogs.insidepage .blog-text img {
     width: 100%;
-    height: 40vh;
+    height: 280px;
     object-fit: cover;
 	margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 994px){
+    #blogs.insidepage .blog-img{
+        height: 380px;
+    }
 }
 
 /* --------------share con-------------- */

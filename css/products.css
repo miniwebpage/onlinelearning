@@ -9,7 +9,7 @@
 
 #products .header-block::after {
     content: '';
-    height: 25vh;
+    height: 190px;
 	width: 100%;
 	position: absolute;
 	left: 0;
@@ -18,7 +18,7 @@
 }
 
 #products .header-img-con{
-	height: 50vh;
+	height: 380px;
 	width: 50%;
 	margin: 2rem auto auto auto;
 	overflow: hidden;
@@ -67,11 +67,11 @@
     }
 
     #products .header-img-con {
-        height: 40vh;
+        height: 280px;
     }
 
     #products .header-block::after {
-        height: 20vh;
+        height: 140px;
     }
 }
 

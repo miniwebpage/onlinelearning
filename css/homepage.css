@@ -59,7 +59,7 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
-	height: 60vh;
+	height: 480px;
 	width: 100%;
 }
 
@@ -126,7 +126,7 @@
 	}
 
 	#homepage .product-card {
-		height: 50vh;
+		height: 380px;
 	}
 
 	#homepage .product-card .card-overlay {
@@ -145,7 +145,7 @@
 	}
 
 	#homepage .product-card {
-		height: 40vh;
+		height: 280px;
 	}
 }
 
