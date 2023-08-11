@@ -146,25 +146,6 @@
     </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
-<script>
-    caches.keys().then(keys => {
-        console.log(CacheStorage)
-    });
-
-    caches.delete(caches).then(() => {
-    console.log('Cache successfully deleted!');
-    });
-
-    function listCookies() {
-        let cookies = document.cookie.split(';')
-        cookies.map((cookie, n) => console.log(`${n}:`, decodeURIComponent(cookie)))
-    }
-
-    function findCookie(e) {
-    let cookies = document.cookie.split(';')
-    cookies.map((cookie, n) => cookie.includes(e) && console.log(decodeURIComponent(cookie), n))
-    }
-</script>
 <script> 
     // jQuery("head").load("base.html", function(response, status) {
     //     document.title = "";
@@ -185,7 +166,7 @@
 <script>
     window.onload = function () {
         generalScripts();
-        partnersSlider();
+		partnersSlider();
         learnMore();
     }
 
