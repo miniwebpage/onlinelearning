@@ -1,14 +1,11 @@
 
-
-function activeTab() {
   $(".tab-link").click(function(){
     // $(this).toggleClass("active");
     $('.tab-link').addClass('active')
     $('.tab-link').not(this).removeClass('active')
   });
-}
 
-function filterBlogs() {
+
   const buttons = document.querySelectorAll(".tab-link-btn");
   const cards = document.querySelectorAll(".blog-card");
 
@@ -31,4 +28,3 @@ function filterBlogs() {
       filter(currentCategory, cards);
     });
   });
-}

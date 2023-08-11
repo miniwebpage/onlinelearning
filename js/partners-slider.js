@@ -1,4 +1,4 @@
-function partnersSlider() {
+
   var slider = tns({
     mode: 'carousel',
     container: '.testi-slider',
@@ -67,4 +67,3 @@ function partnersSlider() {
       }
   });
 
-}

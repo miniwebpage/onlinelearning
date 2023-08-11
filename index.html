@@ -147,12 +147,6 @@
 </body>
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 <script> 
-    // jQuery("head").load("base.html", function(response, status) {
-    //     document.title = "";
-    //     $('meta[property="og:title"]').attr('content', 'Home | Online Learning');
-    //     $('head').append('<link rel="stylesheet" href="css/homepage.css">' + '<link rel="stylesheet" href="css/partners.css">');
-    // });
-
     $("#navigationSec").load("partial/navigation.html");
     $("#partnersSec").load("partial/partners.html");
     $("#footerSec").load("partial/footer.html");
@@ -164,16 +158,8 @@
 <script src="js/general-scripts.js"></script>
 <script src="js/partners-slider.js"></script>
 <script>
-    window.onload = function () {
-        generalScripts();
-		partnersSlider();
-        learnMore();
-    }
-
-    function learnMore() {
-        $(".ghost-btn-white").click(function(){
-            $(".about-block").get(0).scrollIntoView({behavior: 'smooth'});
-        });
-    }
+    $(".ghost-btn-white").click(function(){
+        $(".about-block").get(0).scrollIntoView({behavior: 'smooth'});
+    });
 </script>
 </html>

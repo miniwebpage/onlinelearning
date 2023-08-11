@@ -1,5 +1,4 @@
 
-function paginationBlog() {
     var paginationCon = $('#pagination-container');
     var items = $(".blog-card");
     var numItems = items.length;
@@ -43,4 +42,3 @@ function paginationBlog() {
             }
         },
     });
-}

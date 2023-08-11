@@ -1,4 +1,4 @@
-function generalScripts() {
+
 	// -------navigation------------------
     $("#nav-icon3").click(function(){
 		$(".nav-links-content").animate({
@@ -22,5 +22,3 @@ function generalScripts() {
 	// -------footer-------------
 	var e = new Date().getFullYear(); 
 	$('#currentyr').append(e);
-
-}
