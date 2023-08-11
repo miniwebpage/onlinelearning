@@ -1,10 +1,10 @@
 body, h1, h2, h3, p, small, span, a, button{
-	font-family: 'Montserrat', sans-serif!important;
+	font-family: 'Nunito Sans', sans-serif!important;
 }
 
 body{
 	margin: 0px!important;
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 	position: relative;
 	background-color: #ffffff;
 }
