@@ -4,7 +4,7 @@ body, h1, h2, h3, p, small, span, a, button{
 
 body{
 	margin: 0px!important;
-	scroll-behavior: smooth;
+	/* scroll-behavior: smooth; */
 	position: relative;
 	background-color: #ffffff;
 }
