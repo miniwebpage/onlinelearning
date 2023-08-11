@@ -9,6 +9,31 @@ body{
 	background-color: #ffffff;
 }
 
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color: #ffffff!important;
+		background: #ffffff!important;
+	}
+  
+	.nav-link, .footer-link {
+		transition: all 0.50s ease-in-out 0s;
+		-webkit-transition: all 0.50s ease-in-out 0s;
+		background: -webkit-linear-gradient(#000000, #000000);
+		-webkit-background-clip: text!important;
+		-webkit-text-fill-color: transparent!important;
+		color: transparent!important;
+	}
+
+	#aboutus .nav-link.about, #primary .nav-link.products, #middle .nav-link.products, 
+	#admissions .nav-link.admissions, #blogs .nav-link.blogs, #homepage .footer-link.home, 
+	#aboutus .footer-link.about, #primary .footer-link.primary, #middle .footer-link.middle, 
+	#admissions .footer-link.admissions, #blogs .footer-link.blogs, #contact .footer-link.contact {
+		background: -webkit-linear-gradient(#05668D, #02C39A)!important;
+		-webkit-background-clip: text!important;
+		-webkit-text-fill-color: transparent!important;
+	}
+}
+
 main, section {
 	position: relative;
 	overflow: hidden;
