@@ -4,31 +4,35 @@ function partnersSlider() {
     container: '.testi-slider',
     center: true,
     loop: false,
-    swipeAngle: false,
     nav: true,
     navPosition: 'bottom',
     speed: 400,
     responsive: {
         320: {
             // gutter: 20,
-            controls: false
+            controls: true,
+            swipeAngle: true,
         },
         400: {
             // gutter: 20,
-            controls: true
+            controls: true,
+            swipeAngle: false,
         },
         640: {
             // gutter: 20,
-            controls: true
+            controls: true,
+            swipeAngle: false,
         },
         700: {
             // gutter: 30,
-            controls: true
+            controls: true,
+            swipeAngle: false,
         },
         900: {
             items: 1,
             // gutter: 80,
-            controls: true
+            controls: true,
+            swipeAngle: false,
         }
     }
   });

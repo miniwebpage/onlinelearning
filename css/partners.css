@@ -32,6 +32,7 @@
     max-width: 65px;
     background-position: center!important;
   	background-size: contain!important;
+    background-repeat: no-repeat;
 	transition: all .3s ease-in-out 0s;
 	-webkit-transition: all .3s ease-in-out 0s;
     background: url('../images/icons/qoute.svg');
@@ -48,6 +49,7 @@
 
 .partners-block .tns-ovh {
     overflow: visible!important;
+    pointer-events: none;
 }
 
 .partners-block #testimonials{
@@ -193,5 +195,23 @@
     }
     .partners-block #testimonials .tns-controls button:last-child {
         right: -20px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .partners-block #testimonials .tns-controls button {
+        width: 30px;
+        height: 30px;
+        max-width: 30px;
+    }
+
+    .partners-block .testi-slider .slider-card {
+        padding: 30px;
+    }
+
+    .partners-block .testi-slider .slider-card .qoute-ico {
+        width: 51px;
+        height: 36px;
+        max-width: 51px;
     }
 }
